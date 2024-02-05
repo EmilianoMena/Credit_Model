@@ -29,3 +29,4 @@ df = pd.DataFrame({'Score Points':final_score,
 
 # Find the accuracy of the model
 accuracy = sum([1 if x==y else 0 for x,y in zip(original_score,model_score)])/len(original_score)*100
+print(accuracy)
